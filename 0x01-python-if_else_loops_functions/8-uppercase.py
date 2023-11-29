@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-islower=__import__('7-islower').islower
-
-print("a is {}".format("lower" if islower("a")else"upper"))
-print("H is {}".format("lower" if islower("H")else"upper"))
-print("A is {}".format("lower" if islower("A")else"upper"))
-print("3 is {}".format("lower" if islower("3")else"upper"))
-print("g is {}".format("lower" if islower("g")else"upper"))
+def to_upper(character):
+    if ord(character) >= 97 and ord(charcter) <= 122:
+        return(ord(charcter) - 32)
+    else:
+        return ord(character)
+    ::w
+    def uppercase(string):
+        string_new=""
+        for character in string
+        string_new += "%c"%to_upper(character)
+        print("{:s}".format(string_new))
